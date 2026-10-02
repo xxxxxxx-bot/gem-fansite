@@ -41,7 +41,7 @@ export const revelationChapters = [
 ]
 
 
-// 西语版《Revelación》：官方账号（GEM鄧紫棋）按章投稿（第 12/13/14 集 B 站暂无单独投稿）；zh 为对应的中文版曲目
+// 西语版《Revelación》：官方账号（GEM鄧紫棋）按章投稿（缺第九集 El Viejo y El Mar 与第十二集 Un Momento）；zh 为对应的中文版曲目
 export const spanishChapters = [
   { chapter: '01', title: 'Gloria', zh: '同名西语版', bvid: 'BV1Xh411K7Ts', cover: '/covers/mv/gloria-es.jpg' },
   { chapter: '02', title: 'Hell', zh: '同名西语版', bvid: 'BV12a4y1c7kc', cover: '/covers/mv/hell-es.jpg' },
@@ -51,7 +51,8 @@ export const spanishChapters = [
   { chapter: '06', title: 'Pasión', zh: '受难曲', bvid: 'BV1Tx4y1o7n8', cover: '/covers/mv/pasion-es.jpg' },
   { chapter: '07', title: 'La Edad de Hielo', zh: '冰河时代', bvid: 'BV1eg4y1w7Wo', cover: '/covers/mv/la-edad-de-hielo-es.jpg' },
   { chapter: '08', title: 'El Joven y El Mar', zh: '少年与海', bvid: 'BV1hk4y1P7Ax', cover: '/covers/mv/el-joven-y-el-mar-es.jpg' },
-  { chapter: '09', title: 'Yo Soy Eterno', zh: '老人与海', bvid: 'BV11M4y1j7dR', cover: '/covers/mv/yo-soy-eterno-es.jpg' },
+  { chapter: '13', title: 'Yo Soy Eterno', zh: '夜的尽头', bvid: 'BV11M4y1j7dR', cover: '/covers/mv/yo-soy-eterno-es.jpg' },
   { chapter: '10', title: 'Find You', zh: '同名西语版', bvid: 'BV1CM4y1j7mt', cover: '/covers/mv/find-you-es.jpg' },
   { chapter: '11', title: 'Fuerza Centrífuga', zh: '离心力', bvid: 'BV1vV4y1h7nv', cover: '/covers/mv/fuerza-centrifuga-es.jpg' },
+  { chapter: '14', title: 'Mira Hacia El Cielo', zh: '天空没有极限', bvid: 'BV1sx4y1o7s3', cover: '/covers/mv/mira-hacia-el-cielo-es.jpg' },
 ]

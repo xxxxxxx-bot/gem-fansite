@@ -151,9 +151,9 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
           西语版《Revelación》· <span class="text-gradient-gold">官方投稿</span>
         </h3>
         <p v-reveal="160" class="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
-          同一个故事的西班牙语版本，官方账号逐集投稿（第 12/13/14 集 B 站暂无单独投稿）。
+          同一个故事的西班牙语版本，官方账号逐集投稿（缺第九集 El Viejo y El Mar 与第十二集 Un Momento）。
         </p>
-        <div class="mt-8 grid gap-x-5 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div class="mt-8 grid gap-x-5 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           <button
             v-for="(s, i) in spanishChapters"
             :key="s.bvid"
