@@ -22,7 +22,7 @@ export const mvSpecial = {
   note: '57 分钟完整版：14 首 MV 串成一部科幻电影，从乐土到废土的完整故事。官方投稿。',
 }
 
-// 《启示录》MV 连续剧：官方按「章」投稿的单独版本（第 10/11/13/14 章 B 站暂无单独投稿，可在全旅程版观看）
+// 《启示录》MV 连续剧：官方按「章」投稿的单独版本，14 章齐全
 export const revelationChapters = [
   { chapter: '01', title: 'GLORIA', bvid: 'BV1kd4y1N7sb', cover: '/covers/mv/gloria.jpg' },
   { chapter: '02', title: 'HELL', bvid: 'BV1oF411w7Kv', cover: '/covers/mv/hell.jpg' },
@@ -34,6 +34,10 @@ export const revelationChapters = [
   { chapter: '08', title: '少年与海', bvid: 'BV1gU4y1r73F', cover: '/covers/mv/young-and-sea.jpg' },
   { chapter: '09', title: '老人与海', bvid: 'BV1Ta41137HH', cover: '/covers/mv/old-man-and-sea.jpg' },
   { chapter: '12', title: '让世界暂停一分钟', bvid: 'BV1XW4y1i72L', cover: '/covers/mv/pause-the-world.jpg' },
+  { chapter: '10', title: 'FIND YOU', bvid: 'BV1ve4y1o7k3', cover: '/covers/mv/find-you.jpg' },
+  { chapter: '11', title: '离心力', bvid: 'BV1324y1Z7F9', cover: '/covers/mv/centrifugal-force.jpg' },
+  { chapter: '13', title: '夜的尽头', bvid: 'BV1z8411t7tB', cover: '/covers/mv/end-of-the-night.jpg' },
+  { chapter: '14', title: '天空没有极限', bvid: 'BV1fd4y1T72J', cover: '/covers/mv/sky-no-limits.jpg' },
 ]
 
 

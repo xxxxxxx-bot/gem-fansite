@@ -2,6 +2,8 @@
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 import { mvs, mvSpecial, revelationChapters, spanishChapters } from '../data/mvs.js'
 
+const sortedChapters = [...revelationChapters].sort((a, b) => a.chapter.localeCompare(b.chapter))
+
 const current = ref(null)
 
 function open(mv) {
@@ -114,7 +116,7 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
 
       <div class="mt-10 grid gap-x-5 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         <button
-          v-for="(c, i) in revelationChapters"
+          v-for="(c, i) in sortedChapters"
           :key="c.bvid"
           v-reveal="(i % 5) * 70"
           class="group text-left"
