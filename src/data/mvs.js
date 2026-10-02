@@ -36,10 +36,18 @@ export const revelationChapters = [
   { chapter: '12', title: '让世界暂停一分钟', bvid: 'BV1XW4y1i72L', cover: '/covers/mv/pause-the-world.jpg' },
 ]
 
-// 西语版《Revelación》：官方只在 YouTube 发布，B 站为全 14 集搬运合集
-export const spanishCollection = {
-  title: '《Revelación》西语版 MV 连续剧 · 全 14 集',
-  bvid: 'BV1Tm4y1e7Gt',
-  cover: '/covers/mv/revelacion-spanish.jpg',
-  note: '《启示录》的西班牙语版本，14 首西语 MV 一部不落。',
-}
+
+// 西语版《Revelación》：官方账号（GEM鄧紫棋）按章投稿（第 12/13/14 集 B 站暂无单独投稿）；zh 为对应的中文版曲目
+export const spanishChapters = [
+  { chapter: '01', title: 'Gloria', zh: '同名西语版', bvid: 'BV1Xh411K7Ts', cover: '/covers/mv/gloria-es.jpg' },
+  { chapter: '02', title: 'Hell', zh: '同名西语版', bvid: 'BV12a4y1c7kc', cover: '/covers/mv/hell-es.jpg' },
+  { chapter: '03', title: 'Me & You', zh: '只有我和你的地方', bvid: 'BV1Pm4y1E7ns', cover: '/covers/mv/me-and-you-es.jpg' },
+  { chapter: '04', title: 'El Hombre que Ríe', zh: '你不是第一个离开的人', bvid: 'BV11k4y1K7kj', cover: '/covers/mv/el-hombre-que-rie-es.jpg' },
+  { chapter: '05', title: 'One More Night', zh: '不想回家', bvid: 'BV1aN411m7bd', cover: '/covers/mv/one-more-night-es.jpg' },
+  { chapter: '06', title: 'Pasión', zh: '受难曲', bvid: 'BV1Tx4y1o7n8', cover: '/covers/mv/pasion-es.jpg' },
+  { chapter: '07', title: 'La Edad de Hielo', zh: '冰河时代', bvid: 'BV1eg4y1w7Wo', cover: '/covers/mv/la-edad-de-hielo-es.jpg' },
+  { chapter: '08', title: 'El Joven y El Mar', zh: '少年与海', bvid: 'BV1hk4y1P7Ax', cover: '/covers/mv/el-joven-y-el-mar-es.jpg' },
+  { chapter: '09', title: 'Yo Soy Eterno', zh: '老人与海', bvid: 'BV11M4y1j7dR', cover: '/covers/mv/yo-soy-eterno-es.jpg' },
+  { chapter: '10', title: 'Find You', zh: '同名西语版', bvid: 'BV1CM4y1j7mt', cover: '/covers/mv/find-you-es.jpg' },
+  { chapter: '11', title: 'Fuerza Centrífuga', zh: '离心力', bvid: 'BV1vV4y1h7nv', cover: '/covers/mv/fuerza-centrifuga-es.jpg' },
+]
