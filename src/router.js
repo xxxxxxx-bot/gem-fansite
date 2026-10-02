@@ -6,6 +6,7 @@ const router = createRouter({
   routes: [
     { path: '/', name: 'home', component: HomePage },
     { path: '/music', name: 'music', component: () => import('./pages/MusicPage.vue') },
+    { path: '/mv', name: 'mv', component: () => import('./pages/MvPage.vue') },
     { path: '/tour', name: 'tour', component: () => import('./pages/TourPage.vue') },
     { path: '/fanclub', name: 'fanclub', component: () => import('./pages/FanClubPage.vue') },
     { path: '/about', name: 'about', component: () => import('./pages/AboutPage.vue') },

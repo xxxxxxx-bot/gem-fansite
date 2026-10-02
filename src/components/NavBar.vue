@@ -5,6 +5,7 @@ import { useRoute } from 'vue-router'
 const links = [
   { to: '/', label: '首页' },
   { to: '/music', label: '音乐' },
+  { to: '/mv', label: 'MV' },
   { to: '/tour', label: '巡演' },
   { to: '/fanclub', label: '棋士联盟' },
   { to: '/about', label: '关于' },
