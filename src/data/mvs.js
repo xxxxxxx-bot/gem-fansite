@@ -51,8 +51,10 @@ export const spanishChapters = [
   { chapter: '06', title: 'Pasión', zh: '受难曲', bvid: 'BV1Tx4y1o7n8', cover: '/covers/mv/pasion-es.jpg' },
   { chapter: '07', title: 'La Edad de Hielo', zh: '冰河时代', bvid: 'BV1eg4y1w7Wo', cover: '/covers/mv/la-edad-de-hielo-es.jpg' },
   { chapter: '08', title: 'El Joven y El Mar', zh: '少年与海', bvid: 'BV1hk4y1P7Ax', cover: '/covers/mv/el-joven-y-el-mar-es.jpg' },
+  { chapter: '09', title: 'El Viejo y El Mar', zh: '老人与海', bvid: 'BV14V411T7fP', cover: '/covers/mv/el-viejo-y-el-mar-es.jpg' },
   { chapter: '13', title: 'Yo Soy Eterno', zh: '夜的尽头', bvid: 'BV11M4y1j7dR', cover: '/covers/mv/yo-soy-eterno-es.jpg' },
   { chapter: '10', title: 'Find You', zh: '同名西语版', bvid: 'BV1CM4y1j7mt', cover: '/covers/mv/find-you-es.jpg' },
   { chapter: '11', title: 'Fuerza Centrífuga', zh: '离心力', bvid: 'BV1vV4y1h7nv', cover: '/covers/mv/fuerza-centrifuga-es.jpg' },
+  { chapter: '12', title: 'Un Momento', zh: '让世界暂停一分钟', bvid: 'BV1HP411y7mb', cover: '/covers/mv/un-momento-es.jpg' },
   { chapter: '14', title: 'Mira Hacia El Cielo', zh: '天空没有极限', bvid: 'BV1sx4y1o7s3', cover: '/covers/mv/mira-hacia-el-cielo-es.jpg' },
 ]

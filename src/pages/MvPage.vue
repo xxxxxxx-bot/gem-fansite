@@ -3,6 +3,7 @@ import { onBeforeUnmount, onMounted, ref } from 'vue'
 import { mvs, mvSpecial, revelationChapters, spanishChapters } from '../data/mvs.js'
 
 const sortedChapters = [...revelationChapters].sort((a, b) => a.chapter.localeCompare(b.chapter))
+const sortedSpanish = [...spanishChapters].sort((a, b) => a.chapter.localeCompare(b.chapter))
 
 const current = ref(null)
 
@@ -151,11 +152,11 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
           西语版《Revelación》· <span class="text-gradient-gold">官方投稿</span>
         </h3>
         <p v-reveal="160" class="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
-          同一个故事的西班牙语版本，官方账号逐集投稿（缺第九集 El Viejo y El Mar 与第十二集 Un Momento）。
+          同一个故事的西班牙语版本，官方账号逐集投稿，全 14 集齐全。
         </p>
         <div class="mt-8 grid gap-x-5 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           <button
-            v-for="(s, i) in spanishChapters"
+            v-for="(s, i) in sortedSpanish"
             :key="s.bvid"
             v-reveal="(i % 4) * 70"
             class="group text-left"
@@ -181,7 +182,7 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
           </button>
         </div>
         <p class="mt-6 text-xs leading-relaxed text-muted/70">
-          * 西语版章节与中文版按同一剧情线编号；括注为对应的中文版曲目，缺少的集数可在 B 站搜索观看。
+          * 西语版章节与中文版按同一剧情线编号；括注为对应的中文版曲目。
         </p>
       </div>
 
