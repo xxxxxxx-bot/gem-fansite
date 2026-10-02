@@ -21,3 +21,25 @@ export const mvSpecial = {
   official: true,
   note: '57 分钟完整版：14 首 MV 串成一部科幻电影，从乐土到废土的完整故事。官方投稿。',
 }
+
+// 《启示录》MV 连续剧：官方按「章」投稿的单独版本（第 10/11/13/14 章 B 站暂无单独投稿，可在全旅程版观看）
+export const revelationChapters = [
+  { chapter: '01', title: 'GLORIA', bvid: 'BV1kd4y1N7sb', cover: '/covers/mv/gloria.jpg' },
+  { chapter: '02', title: 'HELL', bvid: 'BV1oF411w7Kv', cover: '/covers/mv/hell.jpg' },
+  { chapter: '03', title: '只有我和你的地方', bvid: 'BV1qW4y1h7wv', cover: '/covers/mv/only-you-and-me.jpg' },
+  { chapter: '04', title: '你不是第一个离开的人', bvid: 'BV1gB4y1z78T', cover: '/covers/mv/not-the-first.jpg' },
+  { chapter: '05', title: '不想回家', bvid: 'BV1vg411r7mq', cover: '/covers/mv/not-going-home.jpg' },
+  { chapter: '06', title: '受难曲', bvid: 'BV1wv4y1F7tF', cover: '/covers/mv/passion.jpg' },
+  { chapter: '07', title: '冰河时代', bvid: 'BV1bt4y1E7UU', cover: '/covers/mv/ice-age.jpg' },
+  { chapter: '08', title: '少年与海', bvid: 'BV1gU4y1r73F', cover: '/covers/mv/young-and-sea.jpg' },
+  { chapter: '09', title: '老人与海', bvid: 'BV1Ta41137HH', cover: '/covers/mv/old-man-and-sea.jpg' },
+  { chapter: '12', title: '让世界暂停一分钟', bvid: 'BV1XW4y1i72L', cover: '/covers/mv/pause-the-world.jpg' },
+]
+
+// 西语版《Revelación》：官方只在 YouTube 发布，B 站为全 14 集搬运合集
+export const spanishCollection = {
+  title: '《Revelación》西语版 MV 连续剧 · 全 14 集',
+  bvid: 'BV1Tm4y1e7Gt',
+  cover: '/covers/mv/revelacion-spanish.jpg',
+  note: '《启示录》的西班牙语版本，14 首西语 MV 一部不落。',
+}

@@ -1,6 +1,6 @@
 <script setup>
 import { onBeforeUnmount, onMounted, ref } from 'vue'
-import { mvs, mvSpecial } from '../data/mvs.js'
+import { mvs, mvSpecial, revelationChapters, spanishCollection } from '../data/mvs.js'
 
 const current = ref(null)
 
@@ -10,6 +10,10 @@ function open(mv) {
 
 function close() {
   current.value = null
+}
+
+function openChapter(c) {
+  open({ ...c, en: `REVELATION · Chapter ${c.chapter}`, note: '《启示录》MV 连续剧 · 官方投稿' })
 }
 
 function onKeydown(e) {
@@ -69,40 +73,101 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
         <p class="mt-1 text-xs leading-relaxed text-muted">{{ m.note }}</p>
       </button>
     </div>
+  </section>
 
-    <!-- 特别收录 -->
-    <div v-reveal class="mt-16">
-      <p class="section-label">Special · 特别收录</p>
-      <button
-        class="group relative mt-6 block w-full overflow-hidden rounded-3xl border border-white/10 text-left"
-        @click="open(mvSpecial)"
-      >
-        <img
-          :src="mvSpecial.cover"
-          alt="《启示录》MV 连续剧全旅程版封面"
-          loading="lazy"
-          class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]"
-        />
-        <div class="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/60 to-ink/20"></div>
-        <div class="relative flex items-center gap-6 p-8 md:p-12">
-          <span
-            class="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#f8e9a0] via-[#e9c46a] to-[#c9963f] text-xl text-[#171102] shadow-[0_8px_30px_rgba(233,196,106,0.35)] transition group-hover:scale-110"
-          >
-            ▶
-          </span>
-          <div>
-            <span class="rounded-full bg-gold/90 px-2.5 py-1 text-[10px] tracking-[0.2em] text-ink">官方投稿</span>
-            <h3 class="mt-3 text-xl font-black md:text-2xl">{{ mvSpecial.title }}</h3>
-            <p class="mt-2 max-w-2xl text-sm leading-relaxed text-cream/80">{{ mvSpecial.note }}</p>
+  <!-- 启示录 MV 连续剧 -->
+  <section class="border-t border-line">
+    <div class="mx-auto max-w-6xl px-6 py-20">
+      <p v-reveal class="section-label">The Revelation Series</p>
+      <h2 v-reveal="80" class="mt-3 text-2xl font-black md:text-3xl">
+        《启示录》MV <span class="text-gradient-lilac">连续剧</span>
+      </h2>
+      <p v-reveal="160" class="mt-4 max-w-2xl text-sm leading-relaxed text-cream/70">
+        2022 年她把整张专辑的 MV 拍成一部 14 章科幻连续剧：Gloria
+        从乐土跌入废土，穿越冰河与深海。官方按章投稿了单独版本（第 10/11/13/14 章 B
+        站暂无单独投稿，可在全旅程版里看到），想从哪一章看就从哪一章看。
+      </p>
+
+      <div class="mt-10 grid gap-6 md:grid-cols-2">
+        <button v-reveal class="group relative overflow-hidden rounded-3xl border border-white/10 text-left" @click="open(mvSpecial)">
+          <img
+            :src="mvSpecial.cover"
+            alt="《启示录》MV 连续剧全旅程版封面"
+            loading="lazy"
+            class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]"
+          />
+          <div class="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/55 to-ink/15"></div>
+          <div class="relative flex h-full items-center gap-5 p-8">
+            <span
+              class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#f8e9a0] via-[#e9c46a] to-[#c9963f] text-lg text-[#171102] shadow-[0_8px_30px_rgba(233,196,106,0.35)] transition group-hover:scale-110"
+            >
+              ▶
+            </span>
+            <div>
+              <span class="rounded-full bg-gold/90 px-2.5 py-1 text-[10px] tracking-[0.2em] text-ink">官方投稿 · 57 分钟</span>
+              <h3 class="mt-2.5 text-lg font-black leading-snug">{{ mvSpecial.title }}</h3>
+              <p class="mt-1.5 text-xs leading-relaxed text-cream/80">一次看完整部连续剧</p>
+            </div>
           </div>
-        </div>
-      </button>
-    </div>
+        </button>
 
-    <p class="mt-10 text-xs leading-relaxed text-muted/70">
-      * 视频均在 Bilibili 播放：标注「官方投稿」的来自 GEM鄧紫棋 / 蜂鸟音乐官方账号，标注「高清搬运」的为社区修复版本（源可能失效，届时会更新）。
-      版权归权利方所有，仅作粉丝整理展示。
-    </p>
+        <button v-reveal="100" class="group relative overflow-hidden rounded-3xl border border-white/10 text-left" @click="open({ ...spanishCollection, en: 'Revelación · Español', note: spanishCollection.note + '（搬运合集）' })">
+          <img
+            :src="spanishCollection.cover"
+            alt="《Revelación》西语版 MV 合集封面"
+            loading="lazy"
+            class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]"
+          />
+          <div class="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/55 to-ink/15"></div>
+          <div class="relative flex h-full items-center gap-5 p-8">
+            <span
+              class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-white/30 bg-black/40 text-lg text-cream backdrop-blur transition group-hover:scale-110 group-hover:border-gold group-hover:text-gold"
+            >
+              ▶
+            </span>
+            <div>
+              <span class="rounded-full bg-black/50 px-2.5 py-1 text-[10px] tracking-[0.2em] text-cream/80 backdrop-blur">搬运合集 · 全 14 集</span>
+              <h3 class="mt-2.5 text-lg font-black leading-snug">{{ spanishCollection.title }}</h3>
+              <p class="mt-1.5 text-xs leading-relaxed text-cream/80">换个语言再爱一遍</p>
+            </div>
+          </div>
+        </button>
+      </div>
+
+      <div class="mt-10 grid gap-x-5 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <button
+          v-for="(c, i) in revelationChapters"
+          :key="c.bvid"
+          v-reveal="(i % 5) * 70"
+          class="group text-left"
+          @click="openChapter(c)"
+        >
+          <div class="relative aspect-video overflow-hidden rounded-xl border border-white/10 bg-surface transition duration-500 group-hover:-translate-y-1 group-hover:border-lilac/50">
+            <img
+              :src="c.cover"
+              :alt="`《启示录》第${c.chapter}章《${c.title}》封面`"
+              loading="lazy"
+              class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-[1.05]"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/25"></div>
+            <span
+              class="absolute left-1/2 top-1/2 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-black/45 text-sm text-cream backdrop-blur transition group-hover:scale-110 group-hover:bg-lilac group-hover:text-ink"
+            >
+              ▶
+            </span>
+            <span class="text-gradient-gold absolute left-3 top-2.5 text-lg font-black drop-shadow">第{{ c.chapter }}章</span>
+          </div>
+          <p class="mt-2 truncate text-sm font-bold transition group-hover:text-gold">{{ c.title }}</p>
+        </button>
+      </div>
+      <p class="mt-6 text-xs leading-relaxed text-muted/70">
+        * 章节按剧情顺序编号；缺少的第十、十一、十三、十四章可在全旅程版中观看对应段落。
+      </p>
+      <p class="mt-10 text-xs leading-relaxed text-muted/70">
+        * 视频均在 Bilibili 播放：标注「官方投稿」的来自 GEM鄧紫棋 / 蜂鸟音乐官方账号，标注「高清搬运」的为社区修复版本（源可能失效，届时会更新）。
+        版权归权利方所有，仅作粉丝整理展示。
+      </p>
+    </div>
   </section>
 
   <Teleport to="body">
