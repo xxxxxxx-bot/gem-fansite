@@ -1,11 +1,34 @@
 <script setup>
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import AlbumCover from '../components/AlbumCover.vue'
 import MedalBadge from '../components/MedalBadge.vue'
-import { albums, songs, stats, tour } from '../data/site.js'
+import { albums, songs, stats, tour, newRelease } from '../data/site.js'
 
 const featuredAlbums = ['启示录', '摩天动物园', 'Xposed', '新的心跳']
   .map((t) => albums.find((a) => a.title === t))
   .filter(Boolean)
+
+// 《自由的你》上线倒计时
+const now = ref(Date.now())
+let timer = null
+onMounted(() => {
+  timer = setInterval(() => (now.value = Date.now()), 1000)
+})
+onBeforeUnmount(() => clearInterval(timer))
+
+const targetTime = new Date(newRelease.targetISO).getTime()
+const countdown = computed(() => {
+  const diff = Math.max(0, targetTime - now.value)
+  return {
+    released: diff <= 0,
+    units: [
+      { label: '天', value: Math.floor(diff / 86400000) },
+      { label: '时', value: Math.floor(diff / 3600000) % 24 },
+      { label: '分', value: Math.floor(diff / 60000) % 60 },
+      { label: '秒', value: Math.floor(diff / 1000) % 60 },
+    ],
+  }
+})
 </script>
 
 <template>
@@ -56,6 +79,95 @@ const featuredAlbums = ['启示录', '摩天动物园', 'Xposed', '新的心跳'
           {{ s }} <span class="text-gold/60">✦</span>
         </span>
       </template>
+    </div>
+  </section>
+
+  <!-- 新歌预告 -->
+  <section class="mx-auto max-w-6xl px-6 pt-24">
+    <div
+      v-reveal
+      class="relative overflow-hidden rounded-3xl border border-lilac/25 bg-gradient-to-br from-[#1b1330] via-[#141024] to-[#0b0812] p-10 md:p-14"
+    >
+      <div class="orb right-[-6%] top-[-30%] h-72 w-72 bg-violet-500/30"></div>
+      <div class="noise absolute inset-0"></div>
+      <div class="relative md:flex md:items-center md:justify-between md:gap-12">
+        <div class="max-w-xl">
+          <p class="section-label">New Single · 新歌预告</p>
+          <h2 class="mt-4 text-4xl font-black md:text-5xl">
+            《<span class="text-gradient-gold">{{ newRelease.title }}</span
+            >》
+          </h2>
+          <p class="mt-3 text-sm tracking-[0.25em] text-lilac">
+            {{ newRelease.kind }} · {{ newRelease.date }} 全平台上线
+          </p>
+          <div class="mt-5 border-l-2 border-lilac/40 pl-5">
+            <p class="whitespace-pre-line text-[13px] leading-[1.9] text-cream/65">{{ newRelease.fullIntro }}</p>
+          </div>
+          <p class="mt-5 text-sm font-bold tracking-wider text-lilac">「{{ newRelease.quote }}」</p>
+          <p class="mt-3 text-xs leading-relaxed text-muted/80">
+            词曲：G.E.M.邓紫棋 · 制作 / 编曲：李荣浩 · 一个用 AI 建成的应援站，正在等一首关于 AI 时代的歌。
+          </p>
+          <div class="mt-6 flex gap-4">
+            <a
+              :href="newRelease.biliUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="前往官方 B 站动态，点击「视频预约：邓紫棋【自由的你】启程版」即可预约"
+              class="group relative block w-44 overflow-hidden rounded-xl border border-white/15"
+            >
+              <img
+                :src="newRelease.cover"
+                alt="B 站预约《自由的你》"
+                class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/10"></div>
+              <div class="relative flex h-24 flex-col items-center justify-center px-2 text-center">
+                <span class="text-sm font-black text-cream drop-shadow">B 站预约</span>
+                <span class="mt-0.5 text-[10px] tracking-widest text-cream/70">10-06 00:00 上线</span>
+              </div>
+            </a>
+            <a
+              :href="newRelease.youtubeUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="前往 YouTube 观看官方歌词版（4K）"
+              class="group relative block w-44 overflow-hidden rounded-xl border border-white/15"
+            >
+              <img
+                :src="newRelease.cover"
+                alt="YouTube 预约《自由的你》"
+                class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/10"></div>
+              <div class="relative flex h-24 flex-col items-center justify-center px-2 text-center">
+                <span class="text-sm font-black text-cream drop-shadow">YouTube 预约</span>
+                <span class="mt-0.5 text-[10px] tracking-widest text-cream/70">官方歌词版 · 4K</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="mt-10 shrink-0 md:mt-0">
+          <template v-if="!countdown.released">
+            <div class="flex gap-3">
+              <div
+                v-for="u in countdown.units"
+                :key="u.label"
+                class="w-[74px] rounded-2xl border border-white/10 bg-black/30 py-4 text-center"
+              >
+                <p class="text-gradient-gold text-3xl font-black tabular-nums">
+                  {{ String(u.value).padStart(2, '0') }}
+                </p>
+                <p class="mt-1 text-[10px] tracking-[0.3em] text-muted">{{ u.label }}</p>
+              </div>
+            </div>
+            <p class="mt-4 text-right text-xs tracking-widest text-muted">距离《自由的你》上线</p>
+          </template>
+          <div v-else class="rounded-2xl border border-gold/40 bg-black/30 px-8 py-6 text-center">
+            <p class="text-gradient-gold text-2xl font-black">已全平台上线</p>
+            <p class="mt-1 text-xs text-muted">去听听《自由的你》吧</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
