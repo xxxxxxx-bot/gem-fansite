@@ -2,6 +2,10 @@
 import MedalBadge from '../components/MedalBadge.vue'
 import { fanclub } from '../data/site.js'
 
+const mainlandRegions = fanclub.regions.filter((r) => r.group === '大陆分区')
+const greaterChinaRegions = fanclub.regions.filter((r) => r.group === '港澳台分会')
+const overseasRegions = fanclub.regions.filter((r) => r.group === '海外分会')
+
 const icons = {
   medal:
     '<circle cx="12" cy="9" r="5"/><path d="M8.5 13.5 7 21l5-2.5L17 21l-1.5-7.5"/>',
@@ -102,14 +106,50 @@ const icons = {
   <section class="mx-auto max-w-6xl px-6 pb-28">
     <p v-reveal class="section-label">Regions</p>
     <h2 v-reveal="80" class="mt-3 text-3xl font-black md:text-4xl">各地棋士联盟</h2>
-    <div class="mt-10 flex flex-wrap gap-3">
-      <span
-        v-for="(r, i) in fanclub.regions"
-        :key="r"
+    <p v-reveal="160" class="mt-4 max-w-2xl text-sm leading-relaxed text-muted">
+      棋士联盟按地区设有分区与分会，共 11 个——大陆七大分区覆盖全部省份，港澳台各设分会，海外设有马来西亚分会。
+    </p>
+
+    <h3 v-reveal class="mt-12 text-xl font-black">大陆七大分区</h3>
+    <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div
+        v-for="(r, i) in mainlandRegions"
+        :key="r.name"
         v-reveal="i * 60"
-        class="rounded-xl border border-lilac/25 bg-white/[0.03] px-6 py-3 font-bold tracking-widest transition hover:border-gold/50 hover:text-gold"
-        >{{ r }}棋士联盟</span
+        class="card-lift rounded-2xl border border-white/5 bg-surface p-6"
       >
+        <h4 class="font-black tracking-widest">{{ r.name }}</h4>
+        <p class="mt-2.5 text-[13px] leading-relaxed text-muted">{{ r.area }}</p>
+      </div>
     </div>
+
+    <h3 v-reveal class="mt-12 text-xl font-black">港澳台分会</h3>
+    <div class="mt-6 grid gap-5 sm:grid-cols-3">
+      <div
+        v-for="(r, i) in greaterChinaRegions"
+        :key="r.name"
+        v-reveal="i * 60"
+        class="card-lift rounded-2xl border border-white/5 bg-surface p-6"
+      >
+        <h4 class="font-black tracking-widest">{{ r.name }}</h4>
+      </div>
+    </div>
+
+    <h3 v-reveal class="mt-12 text-xl font-black">海外分会</h3>
+    <div class="mt-6 grid gap-5 sm:grid-cols-3">
+      <div
+        v-for="(r, i) in overseasRegions"
+        :key="r.name"
+        v-reveal="i * 60"
+        class="card-lift rounded-2xl border border-white/5 bg-surface p-6"
+      >
+        <h4 class="font-black tracking-widest">{{ r.name }}</h4>
+        <p class="mt-2.5 text-[13px] leading-relaxed text-muted">{{ r.area }}</p>
+      </div>
+    </div>
+
+    <p class="mt-10 text-xs leading-relaxed text-muted/70">
+      * 分区信息整理自官方后援会《棋士联盟入会问答》（2022 年 7 月）；入会与分区归属以官方站点为准。
+    </p>
   </section>
 </template>

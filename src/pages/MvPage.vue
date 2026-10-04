@@ -41,6 +41,22 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
         官方 MV 精选，点开在站内直接播放（Bilibili
         官方嵌入播放器）。来源优先官方账号投稿，其余为画质最好的修复版，逐条都有标注；也可一键跳转 B 站观看。
       </p>
+
+      <!-- 角标图例 -->
+      <div
+        v-reveal="280"
+        class="mt-8 flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/[0.02] p-5 sm:flex-row sm:items-center sm:gap-6"
+      >
+        <div class="flex items-center gap-3">
+          <span class="shrink-0 rounded-full bg-gold/90 px-2.5 py-1 text-[10px] tracking-[0.2em] text-ink">官方投稿</span>
+          <p class="text-xs leading-relaxed text-muted">视频由 GEM鄧紫棋 / 邓紫棋工作室官方账号上传，官方原版画质，不会失效。</p>
+        </div>
+        <div class="hidden h-8 w-px bg-white/10 sm:block"></div>
+        <div class="flex items-center gap-3">
+          <span class="shrink-0 rounded-full bg-black/50 px-2.5 py-1 text-[10px] tracking-[0.2em] text-cream/80 backdrop-blur">高清搬运</span>
+          <p class="text-xs leading-relaxed text-muted">社区修复的高画质版本，非官方上传，存在下架可能。</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -187,8 +203,7 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
       </div>
 
       <p class="mt-10 text-xs leading-relaxed text-muted/70">
-        * 视频均在 Bilibili 播放：标注「官方投稿」的来自 GEM鄧紫棋 / 蜂鸟音乐官方账号，标注「高清搬运」的为社区修复版本（源可能失效，届时会更新）。
-        版权归权利方所有，仅作粉丝整理展示。
+        * 「高清搬运」的源可能失效，届时会更新；版权归权利方所有，仅作粉丝整理展示。
       </p>
     </div>
   </section>

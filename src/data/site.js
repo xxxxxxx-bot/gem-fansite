@@ -217,7 +217,19 @@ export const fanclub = {
     { icon: 'mail', title: 'Gloria 的来信', desc: '不定期送达的会员电邮。' },
   ],
   price: 'RMB 220 / HKD 250 / TWD 1,200 / USD 38',
-  regions: ['华东', '华南', '华北', '华中', '香港', '澳门', '台湾'],
+  regions: [
+    { group: '大陆分区', name: '华南分区', area: '广东 · 广西 · 海南' },
+    { group: '大陆分区', name: '华东分区', area: '上海 · 江苏 · 浙江 · 山东 · 福建 · 江西 · 安徽' },
+    { group: '大陆分区', name: '华北分区', area: '北京 · 河北 · 天津 · 山西 · 内蒙古' },
+    { group: '大陆分区', name: '华中分区', area: '河南 · 湖北 · 湖南' },
+    { group: '大陆分区', name: '西南分区', area: '西藏 · 四川 · 重庆 · 贵州 · 云南' },
+    { group: '大陆分区', name: '西北分区', area: '陕西 · 宁夏 · 甘肃 · 青海 · 新疆' },
+    { group: '大陆分区', name: '东北分区', area: '吉林 · 辽宁 · 黑龙江' },
+    { group: '港澳台分会', name: '台湾分会' },
+    { group: '港澳台分会', name: '香港分会' },
+    { group: '港澳台分会', name: '澳门分会' },
+    { group: '海外分会', name: '马来西亚分会', area: 'FB「鄧紫棋馬來西亞棋士聯盟」' },
+  ],
   officialUrl: 'https://www.iamgem.com/fan-club',
 }
 

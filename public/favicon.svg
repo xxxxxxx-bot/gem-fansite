@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fdf3cd"/>
+      <stop offset="0.5" stop-color="#e9c46a"/>
+      <stop offset="1" stop-color="#c9963f"/>
+    </linearGradient>
+    <linearGradient id="goldTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fef7da"/>
+      <stop offset="1" stop-color="#eed289"/>
+    </linearGradient>
+  </defs>
+  <!-- 钻石主体（外描边保证浅色背景下也清晰） -->
+  <path d="M15 6h34l11 15-28 36L4 21Z" fill="url(#gold)" stroke="#07060c" stroke-width="1.4" stroke-linejoin="round"/>
+  <!-- 顶部台面高光 -->
+  <path d="M15 6l5 15h24l5-15Z" fill="url(#goldTop)" opacity="0.95"/>
+  <!-- 棱线 -->
+  <path d="M25 21 32 57l7-36M25 21h14M15 6l5 15 12-15 12 15 5-15M4 21h56"
+        fill="none" stroke="#07060c" stroke-width="1.5" stroke-linejoin="round" opacity="0.5"/>
+</svg>
