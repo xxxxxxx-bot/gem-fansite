@@ -1,4 +1,5 @@
 <script setup>
+import { Analytics } from '@vercel/analytics/vue'
 import NavBar from './components/NavBar.vue'
 import FooterBar from './components/FooterBar.vue'
 </script>
@@ -10,5 +11,6 @@ import FooterBar from './components/FooterBar.vue'
       <router-view />
     </main>
     <FooterBar />
+    <Analytics />
   </div>
 </template>
