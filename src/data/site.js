@@ -162,6 +162,7 @@ export const book = {
 }
 
 export const songs = [
+  '自由的你',
   '泡沫',
   '光年之外',
   '倒数',
@@ -200,7 +201,11 @@ export const tour = {
 
 export const milestones = [
   { year: '2023.12', title: '广州启航', desc: '《I AM GLORIA》世界巡回演唱会从广州出发。' },
-  { year: '149+', title: '1.0 阶段场次', desc: '足迹覆盖亚洲、欧洲、美洲三大洲。' },
+  {
+    year: '170',
+    title: '吉尼斯世界纪录',
+    desc: '以 170 场体育场专场获认证「独唱艺人演唱会单次巡演体育场专场数量最多」——2026.10.5 深圳收官夜现场颁证，生涯首项吉尼斯。',
+  },
   { year: '300', title: '个人第 300 场', desc: '2026 年 7 月 25 日天津站达成，创华语女歌手纪录。' },
 ]
 
@@ -242,7 +247,7 @@ export const newRelease = {
   targetISO: '2026-10-06T00:00:00+08:00',
   cover: '/covers/mv/free-to-be-you.jpg',
   youtubeUrl: 'https://www.youtube.com/watch?v=0GZ4gQQE1yM',
-  biliUrl: 'https://space.bilibili.com/1889545341/dynamic',
+  biliUrl: 'https://www.bilibili.com/video/BV1NqHe6aEd9',
   fullIntro: `当科技不断替我们预测、量化、修正，
 当愉悦与便利变得唾手可得，
 我们是否还能听见自己的感受、相信自己的判断，并为自己作出选择？
@@ -280,5 +285,8 @@ export const timeline = [
   { year: '2022', text: '发行科幻概念专辑《启示录》。' },
   { year: '2023', text: '《I AM GLORIA》世界巡回演唱会广州启航。' },
   { year: '2025', text: '出版首部长篇科幻小说《启示路》，首日销量破 20 万册，后入围第 37 届银河奖最佳原创图书奖。' },
-  { year: '2026', text: '7 月 25 日天津站，达成个人第 300 场演唱会。' },
+  {
+    year: '2026',
+    text: '7 月 25 日天津站达成个人第 300 场演唱会。\n10 月 5 日深圳收官，《I AM GLORIA》以 170 场体育场专场获吉尼斯世界纪录认证。',
+  },
 ]

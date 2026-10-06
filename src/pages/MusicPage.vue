@@ -43,6 +43,7 @@ function moveTrack(delta) {
 
       <article
         v-for="(a, i) in albums"
+        :id="`album-${i}`"
         :key="a.title"
         class="relative py-10 md:grid md:grid-cols-2 md:gap-20"
       >

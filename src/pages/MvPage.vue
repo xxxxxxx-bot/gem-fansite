@@ -79,6 +79,11 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
             ▶
           </span>
           <span
+            v-if="m.isNew"
+            class="absolute left-3 top-3 rounded-full bg-lilac px-2.5 py-1 text-[10px] font-black tracking-[0.2em] text-ink shadow-[0_0_14px_rgba(167,139,250,0.65)]"
+            >NEW</span
+          >
+          <span
             class="absolute right-3 top-3 rounded-full px-2.5 py-1 text-[10px] tracking-[0.2em]"
             :class="m.official ? 'bg-gold/90 text-ink' : 'bg-black/50 text-cream/80 backdrop-blur'"
           >

@@ -52,7 +52,7 @@ import { timeline } from '../data/site.js'
         <li v-for="(t, i) in timeline" :key="t.year" v-reveal="i * 60" class="relative pl-10">
           <span class="absolute left-0 top-1 h-4 w-4 rounded-full border-2 border-gold bg-ink"></span>
           <p class="text-gradient-gold font-mono text-lg font-black">{{ t.year }}</p>
-          <p class="mt-1.5 text-sm leading-relaxed text-cream/75">{{ t.text }}</p>
+          <p class="mt-1.5 whitespace-pre-line text-sm leading-relaxed text-cream/75">{{ t.text }}</p>
         </li>
       </ol>
     </div>

@@ -5,7 +5,10 @@ import MedalBadge from '../components/MedalBadge.vue'
 import { albums, songs, stats, tour, newRelease } from '../data/site.js'
 
 const featuredAlbums = ['启示录', '摩天动物园', 'Xposed', '新的心跳']
-  .map((t) => albums.find((a) => a.title === t))
+  .map((t) => {
+    const idx = albums.findIndex((a) => a.title === t)
+    return idx < 0 ? null : { ...albums[idx], idx }
+  })
   .filter(Boolean)
 
 // 《自由的你》上线倒计时
@@ -92,7 +95,7 @@ const countdown = computed(() => {
       <div class="noise absolute inset-0"></div>
       <div class="relative md:flex md:items-center md:justify-between md:gap-12">
         <div class="max-w-xl">
-          <p class="section-label">New Single · 新歌预告</p>
+          <p class="section-label">New Release · 新歌上线</p>
           <h2 class="mt-4 text-4xl font-black md:text-5xl">
             《<span class="text-gradient-gold">{{ newRelease.title }}</span
             >》
@@ -112,18 +115,18 @@ const countdown = computed(() => {
               :href="newRelease.biliUrl"
               target="_blank"
               rel="noopener noreferrer"
-              title="前往官方 B 站动态，点击「视频预约：邓紫棋【自由的你】启程版」即可预约"
+              title="前往 B 站观看《自由的你》官方歌词版（4K）"
               class="group relative block w-44 overflow-hidden rounded-xl border border-white/15"
             >
               <img
                 :src="newRelease.cover"
-                alt="B 站预约《自由的你》"
+                alt="B 站《自由的你》"
                 class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/10"></div>
               <div class="relative flex h-24 flex-col items-center justify-center px-2 text-center">
-                <span class="text-sm font-black text-cream drop-shadow">B 站预约</span>
-                <span class="mt-0.5 text-[10px] tracking-widest text-cream/70">10-06 00:00 上线</span>
+                <span class="text-sm font-black text-cream drop-shadow">B 站已上线</span>
+                <span class="mt-0.5 text-[10px] tracking-widest text-cream/70">去听《自由的你》</span>
               </div>
             </a>
             <a
@@ -135,12 +138,12 @@ const countdown = computed(() => {
             >
               <img
                 :src="newRelease.cover"
-                alt="YouTube 预约《自由的你》"
+                alt="YouTube《自由的你》"
                 class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/10"></div>
               <div class="relative flex h-24 flex-col items-center justify-center px-2 text-center">
-                <span class="text-sm font-black text-cream drop-shadow">YouTube 预约</span>
+                <span class="text-sm font-black text-cream drop-shadow">YouTube 已上线</span>
                 <span class="mt-0.5 text-[10px] tracking-widest text-cream/70">官方歌词版 · 4K</span>
               </div>
             </a>
@@ -193,10 +196,16 @@ const countdown = computed(() => {
       >
     </div>
     <div class="grid grid-cols-2 gap-6 md:grid-cols-4">
-      <div v-for="(a, i) in featuredAlbums" :key="a.title" v-reveal="i * 90" class="card-lift rounded-2xl">
+      <RouterLink
+        v-for="(a, i) in featuredAlbums"
+        :key="a.title"
+        v-reveal="i * 90"
+        :to="`/music#album-${a.idx}`"
+        class="card-lift block rounded-2xl"
+      >
         <AlbumCover :title="a.title" :year="a.year" :colors="a.colors" :tag="a.type" :cover="a.cover" show-caption />
         <p class="mt-4 line-clamp-2 text-xs leading-relaxed text-muted">{{ a.desc }}</p>
-      </div>
+      </RouterLink>
     </div>
   </section>
 

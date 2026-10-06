@@ -17,8 +17,9 @@ const nightLabel = (n) => (n > 1 ? `${n} 场` : '')
       </h1>
       <p v-reveal="160" class="mt-3 text-lg tracking-[0.35em] text-cream/60">世界巡回演唱会</p>
       <p v-reveal="240" class="mt-6 max-w-2xl text-sm leading-relaxed text-cream/70">
-        从 2011 年首登红磡到 2026 年巡演破纪录，四轮大型世界巡回共 {{ totalShows }} 站、{{ totalNights }}
-        场。2026 年 7 月 25 日天津站达成个人第 300 场演唱会，创下华语女歌手纪录。
+        从 2011 年首登红磡到 2026 年 10 月 5 日深圳收官，四轮大型世界巡回共 {{ totalShows }} 站、{{ totalNights }}
+        场。收官夜现场，《I AM GLORIA》获吉尼斯世界纪录认证——「独唱艺人演唱会单次巡演体育场专场数量最多」（170
+        场），创下全新世界纪录。
       </p>
     </div>
   </section>
@@ -77,18 +78,24 @@ const nightLabel = (n) => (n > 1 ? `${n} 场` : '')
   <!-- 内地最终六站 -->
   <section class="mx-auto max-w-6xl px-6 pb-28">
     <div
-      class="relative overflow-hidden rounded-3xl border border-white/5 bg-gradient-to-br from-[#1b1330] to-[#0b0812] p-10 md:p-14"
+      class="relative overflow-hidden rounded-3xl border border-gold/15 bg-gradient-to-br from-[#241c0e] via-[#171221] to-[#0b0812] p-10 md:p-14"
     >
-      <div class="orb right-[-6%] bottom-[-40%] h-72 w-72 bg-violet-500/25"></div>
+      <div class="orb right-[-6%] bottom-[-40%] h-72 w-72 bg-gold/20"></div>
       <div class="noise absolute inset-0"></div>
       <div class="relative">
-        <p v-reveal class="section-label">The Final Six · 内地最终六站</p>
-        <div class="mt-9 flex flex-wrap gap-3">
+        <p v-reveal class="section-label">The Grand Finale · 巡演收官</p>
+        <h3 v-reveal="80" class="mt-4 text-2xl font-black md:text-3xl">
+          2026.10.5 深圳 · <span class="text-gradient-gold">吉尼斯世界纪录之夜</span>
+        </h3>
+        <p v-reveal="160" class="mt-4 max-w-2xl text-sm leading-relaxed text-cream/70">
+          深圳大运中心体育场，12 场全数售罄的最终章。收官夜现场，吉尼斯认证官宣布：《I AM
+          GLORIA》以 170 场体育场专场，成为「独唱艺人演唱会单次巡演体育场专场数量最多」的世界纪录保持者。
+        </p>
+        <div class="mt-8 flex flex-wrap gap-2.5">
           <span
-            v-for="(c, i) in tour.finalSix"
+            v-for="c in tour.finalSix"
             :key="c"
-            v-reveal="i * 70"
-            class="rounded-xl border border-lilac/25 bg-white/[0.03] px-7 py-3.5 text-lg font-bold tracking-widest transition hover:border-gold/50 hover:text-gold"
+            class="rounded-full border border-white/10 px-4 py-1.5 text-xs tracking-widest text-cream/70"
             >{{ c }}</span
           >
         </div>

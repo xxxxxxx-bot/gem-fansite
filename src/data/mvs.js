@@ -1,6 +1,7 @@
 // MV 源为 bilibili：official=true 为官方账号投稿（GEM鄧紫棋 / 邓紫棋工作室），false 为高画质搬运版
 // 封面已本地化到 public/covers/mv/
 export const mvs = [
+  { title: '自由的你', en: 'FREE TO BE YOU · 啟程版', year: '2026', bvid: 'BV1NqHe6aEd9', cover: '/covers/mv/free-to-be-you.jpg', official: true, isNew: true, note: '新专辑先行曲官方歌词版，上线首日播放破 20 万' },
   { title: '光年之外', en: 'LIGHT YEARS AWAY', year: '2016', bvid: 'BV1ws411Y7wi', cover: '/covers/mv/light-years.jpg', official: false, note: '电影《太空旅客》中文主题曲，B站播放近 500 万' },
   { title: '倒数', en: 'TIK TOK', year: '2018', bvid: 'BV1LM411h7sZ', cover: '/covers/mv/tik-tok.jpg', official: false, note: '4K 修复版画质，B站播放超 80 万' },
   { title: '句号', en: 'FULL STOP', year: '2019', bvid: 'BV1RJ411R7tF', cover: '/covers/mv/full-stop.jpg', official: true, note: 'B站音乐官方合作首播，播放超 1,300 万、点击破亿' },
