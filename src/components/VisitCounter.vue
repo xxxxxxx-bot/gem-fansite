@@ -16,9 +16,17 @@ const runningDays = computed(() => {
   return days > 0 ? days : 1
 })
 
+// 不蒜子对 localhost/127.0.0.1/裸 IP/超 22 字符域名禁止接入，
+// 会把「域名/IP已被禁用」等错误文本直接填入标签——检测到即视为失败并隐藏
+const ERROR_PATTERN = /禁用|已被|屏蔽/
+
 function pollBusuanzi(tries = 20) {
   const pv = document.getElementById('busuanzi_site_pv')
-  if (pv && pv.textContent.trim()) {
+  const text = pv ? pv.textContent.trim() : ''
+  if (text && ERROR_PATTERN.test(text)) {
+    failed.value = true
+    clearTimeout(timer)
+  } else if (text) {
     ready.value = true
     clearTimeout(timer)
   } else if (tries > 0) {
