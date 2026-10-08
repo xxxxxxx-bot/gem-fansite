@@ -1,6 +1,7 @@
 <script setup>
 import { useRoute } from 'vue-router'
 import { socials } from '../data/socials.js'
+import VisitCounter from './VisitCounter.vue'
 
 const route = useRoute()
 const links = [
@@ -87,9 +88,12 @@ const year = new Date().getFullYear()
     </div>
 
     <div class="border-t border-line px-6 py-6">
-      <p class="mx-auto max-w-6xl text-xs leading-relaxed text-muted/80">
+      <div class="mx-auto max-w-6xl">
+        <VisitCounter />
+        <p class="mt-3 text-xs leading-relaxed text-muted/80">
         © {{ year }} GEM FANSITE · 本站为粉丝自制致敬网站，非官方网站，与邓紫棋女士及其官方团队无关。内容整理自公开资料；专辑封面图片版权归邓紫棋女士及相关唱片公司所有，仅作粉丝非商业展示用途，如有侵权请联系删除。
       </p>
+      </div>
     </div>
   </footer>
 </template>
