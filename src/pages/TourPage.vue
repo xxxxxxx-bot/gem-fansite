@@ -2,7 +2,7 @@
 import { milestones, tour } from '../data/site.js'
 import { tours, totalShows, totalNights } from '../data/tours.js'
 
-const nightLabel = (n) => (n > 1 ? `${n} 场` : '')
+const nightLabel = (n) => `${n} 场`
 </script>
 
 <template>

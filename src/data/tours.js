@@ -1,4 +1,6 @@
 // 数据来源：G.E.M. 官方网站 iamgem.com/tours（2026 年 9 月整理，简体转写）
+// 2026-10-08 校对补全：官网漏记部分加场，对照百度百科行程表（总 182 场，与吉尼斯认证一致）、
+// 文旅部门审批公示及工作室官宣逐场核实后补齐，见各条目修改
 // nights 为该站连开场次数
 export const tours = [
   {
@@ -20,16 +22,17 @@ export const tours = [
       { date: '2025.11.29-30', city: '南宁', venue: '广西体育中心体育场', nights: 2 },
       { date: '2025.11.15-16', city: '福州', venue: '福州海峡奥体中心体育场', nights: 2 },
       { date: '2025.11.1-2', city: '武汉', venue: '武汉体育中心主体育场', nights: 2 },
-      { date: '2025.10.25', city: '徐州', venue: '徐州市奥体中心主体育场', nights: 1 },
-      { date: '2025.10.18、19', city: '成都', venue: '东安湖体育公园主体育场', nights: 2 },
+      { date: '2025.10.25-26', city: '徐州', venue: '徐州市奥体中心主体育场', nights: 2 }, // 官网漏 10.26 加场
+      { date: '2025.10.17-19', city: '成都', venue: '东安湖体育公园主体育场', nights: 3 }, // 官网漏 10.17 加场（工作室官宣加开）
       { date: '2025.8.29-31、9.5-7、12-14、19-21', city: '上海', venue: '上海虹口足球场', nights: 12 },
-      { date: '2025.8.15-17、19', city: '香港', venue: '香港启德体育园启德主场馆', nights: 4 },
+      { date: '2025.8.15-17、19-20', city: '香港', venue: '香港启德体育园启德主场馆', nights: 5 }, // 8.19/8.20 两度加场，官网漏 8.20（启德五连开）
       { date: '2025.8.2-3', city: '赣州', venue: '赣州市全民健身中心', nights: 2 },
       { date: '2025.7.26-27', city: '洛阳', venue: '洛阳市奥林匹克中心体育场', nights: 2 },
       { date: '2025.7.12-13', city: '沈阳', venue: '沈阳奥体中心体育场', nights: 2 },
-      { date: '2025.6.14', city: '石家庄', venue: '河北奥林匹克体育中心体育场', nights: 1 },
-      { date: '2025.5.24-25', city: '衡阳', venue: '衡阳市体育中心体育场', nights: 2 },
-      { date: '2025.5.31', city: '贵阳', venue: '贵阳奥林匹克体育中心体育场', nights: 1 },
+      { date: '2025.6.14-15', city: '石家庄', venue: '河北奥林匹克体育中心体育场', nights: 2 }, // 官网漏 6.15 加场（两场均售罄）
+      { date: '2025.7.5-6', city: '烟台', venue: '烟台体育公园体育场', nights: 2 }, // 官网整站漏记（文旅部审批 2 场）
+      { date: '2025.5.23-25', city: '衡阳', venue: '衡阳市体育中心体育场', nights: 3 }, // 官网漏 5.23 加场
+      { date: '2025.5.31、6.1', city: '贵阳', venue: '贵阳奥林匹克体育中心体育场', nights: 2 }, // 官网漏 6.1 加场
       { date: '2025.5.17-5.18', city: '襄阳', venue: '襄阳奥林匹克体育中心', nights: 2 },
       { date: '2025.5.10-5.11', city: '温州', venue: '温州奥体中心体育场', nights: 2 },
       { date: '2025.4.7', city: '多伦多', venue: 'COCA-COLA COLISEUM', nights: 1 },
@@ -59,8 +62,8 @@ export const tours = [
       { date: '2024.7.20-7.21', city: '台州', venue: '台州市体育中心体育场', nights: 2 },
       { date: '2024.7.13', city: '哈尔滨', venue: '哈尔滨国际会展体育中心体育场', nights: 1 },
       { date: '2024.7.6-7.7', city: '福州', venue: '福州海峡奥林匹克体育中心体育场', nights: 2 },
-      { date: '2024.6.29', city: '郑州', venue: '郑州奥林匹克体育中心体育场', nights: 1 },
-      { date: '2024.6.22-6.23', city: '南京', venue: '南京奥体中心体育场', nights: 2 },
+      { date: '2024.6.29-6.30', city: '郑州', venue: '郑州奥林匹克体育中心体育场', nights: 2 }, // 官网漏 6.30 加场
+      { date: '2024.6.21-6.23', city: '南京', venue: '南京奥体中心体育场', nights: 3 }, // 官网漏 6.21 加场
       { date: '2024.6.15-6.16', city: '青岛', venue: '青岛市民健身中心体育场', nights: 2 },
       { date: '2024.6.1-6.3', city: '成都', venue: '成都东安湖体育公园主体育场', nights: 3 },
       { date: '2024.5.24-5.28', city: '上海', venue: '上海体育场', nights: 5 },
@@ -142,7 +145,7 @@ export const tours = [
       { date: '2015.5.9', city: '重庆', venue: '重庆国际会议展览中心', nights: 1 },
       { date: '2015.5.2', city: '高雄', venue: '高雄巨蛋', nights: 1 },
       { date: '2015.3.12', city: '台北', venue: '台北小巨蛋', nights: 1 },
-      { date: '2015.3.1', city: '美国安卡斯韦尔', venue: 'Mohegan Sun', nights: 1 },
+      { date: '2015.2.28-3.1', city: '美国安卡斯韦尔', venue: 'Mohegan Sun （金神体育馆）', nights: 2 }, // 官网漏 2.28 一场
       { date: '2015.2.21', city: '美国拉斯维加斯', venue: 'The Venetian Las Vegas', nights: 1 },
       { date: '2015.1.30-2.1', city: '新加坡', venue: '新加坡博览中心', nights: 3 },
       { date: '2015.1.23-1.24', city: '马来西亚吉隆坡', venue: '布特拉室内体育馆', nights: 2 },
@@ -183,6 +186,7 @@ export const tours = [
     years: '2011–2012',
     shows: [
       { date: '2012.5.26', city: '美国雷诺（内华达州）', venue: 'Reno Ballroom', nights: 1 },
+      { date: '2012.12.2', city: '广州', venue: '中山纪念堂', nights: 1 }, // Part 3，官网整场漏记
       { date: '2012.4.29', city: '广州', venue: '番禺英东体育馆', nights: 1 },
       { date: '2012.4.21', city: '佛山', venue: '岭南明珠体育馆', nights: 1 },
       { date: '2011.12.19', city: '加拿大多伦多', venue: 'Hershey Centre', nights: 1 },
