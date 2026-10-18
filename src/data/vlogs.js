@@ -6,6 +6,7 @@ export const vlogFilters = ['全部', '世界巡演', '世界巡玩', '开箱', 
 export const vlogs = [
   {
     bvid: 'BV14joqBxEKa',
+    number: 51,
     title: '台北篇',
     series: 'I AM GLORIA 世界巡演',
     group: '世界巡演',
@@ -15,6 +16,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1EozQBCEts',
+    number: 50,
     title: '广州跨年站篇',
     series: 'I AM GLORIA 世界巡演',
     group: '世界巡演',
@@ -24,6 +26,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1KQa9zFEju',
+    number: 49,
     title: '香港篇',
     series: 'I AM GLORIA 世界巡演',
     group: '世界巡演',
@@ -33,6 +36,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1P5tKzLEWT',
+    number: 48,
     title: '启示路 · 恒藏版小说',
     series: '幸福开箱',
     group: '开箱',
@@ -42,6 +46,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1MB5KzQEcJ',
+    number: 47,
     title: '多伦多篇',
     series: 'I AM GLORIA 世界巡玩',
     group: '世界巡玩',
@@ -51,6 +56,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1CiGhzGEqN',
+    number: 46,
     title: '纽约篇',
     series: 'I AM GLORIA 世界巡玩',
     group: '世界巡玩',
@@ -60,6 +66,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1y1LczvEsp',
+    number: 45,
     title: '旧金山篇',
     series: 'I AM GLORIA 世界巡玩',
     group: '世界巡玩',
@@ -69,6 +76,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1C3fcYhEb6',
+    number: 44,
     title: '洛杉矶 & 拉斯维加斯篇',
     series: 'I AM GLORIA 世界巡玩',
     group: '世界巡玩',
@@ -78,6 +86,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1SkPVexEXZ',
+    number: 43,
     title: '伦敦篇',
     series: 'I AM GLORIA 世界巡玩',
     group: '世界巡玩',
@@ -87,6 +96,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1hzK5eNEtG',
+    number: 42,
     title: '巴黎篇',
     series: 'I AM GLORIA 世界巡玩',
     group: '世界巡玩',
@@ -96,6 +106,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1vK421C78c',
+    number: 41,
     title: '球王访港表演赛',
     series: '第一次在这种气氛下表演',
     group: '日常',
@@ -105,6 +116,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV17Q4y1L797',
+    number: 40,
     title: '深圳演唱会 · 全记录',
     series: '2024 第一个工作',
     group: '世界巡演',
@@ -114,6 +126,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV15T4y1n7m5',
+    number: 39,
     title: '深圳演唱会 · 车程篇',
     series: '2024 第一个工作',
     group: '世界巡演',
@@ -123,6 +136,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1Yk4y1W7sX',
+    number: 37,
     title: '马尔代夫 · 天堂之旅',
     series: '日常',
     group: '日常',
@@ -132,6 +146,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1CW4y1j7DR',
+    number: 36,
     title: '启示录 · 首波周边',
     series: '幸福开箱',
     group: '开箱',
@@ -141,6 +156,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV19d4y1G7xm',
+    number: 35,
     title: '启示录 1–8 集剧情盘点',
     series: '幕后盘点',
     group: '日常',
@@ -150,6 +166,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1E4411L7aW',
+    number: 9,
     title: '邓紫棋秒变邓三岁 表演吃播萌翻天',
     series: '邓紫棋工作室',
     group: '日常',
@@ -159,6 +176,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1Px411Z7H1',
+    number: 12,
     title: '邓紫棋演绎“小魔鬼”版日常，好听又好看！',
     series: '邓紫棋工作室',
     group: '日常',
@@ -168,6 +186,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1x4411H7k9',
+    number: 10,
     title: '邓紫棋素颜出镜：自信的女生最美丽！',
     series: '邓紫棋工作室',
     group: '日常',
@@ -177,6 +196,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1kt4y1C7YV',
+    number: 24,
     title: '我的隔离生活 の 精彩每一天',
     series: '邓紫棋工作室',
     group: '日常',
@@ -186,6 +206,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1Ht4y1i7fU',
+    number: 27,
     title: '幸福开箱 之 1:6 钢铁侠',
     series: '邓紫棋工作室',
     group: '开箱',
@@ -195,6 +216,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV19E411f7Jr',
+    number: 15,
     title: '“小小邓”的第一次长途飞行！',
     series: '邓紫棋工作室',
     group: '日常',
@@ -204,6 +226,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1EJ41197Q8',
+    number: 16,
     title: '吃货之旅，没有[句号]',
     series: '邓紫棋工作室',
     group: '日常',
@@ -223,6 +246,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1GJ41157LQ',
+    number: 18,
     title: '自己的新专辑自己买！',
     series: '邓紫棋工作室',
     group: '日常',
@@ -232,6 +256,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1Np4y1X7Bp',
+    number: 23,
     title: '我的隔离生活 の 午餐日常',
     series: '邓紫棋工作室',
     group: '日常',
@@ -241,6 +266,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1o4411M7x2',
+    number: 11,
     title: '围观邓三岁的快乐周末 收获太阳花开心能量',
     series: '邓紫棋工作室',
     group: '日常',
@@ -250,6 +276,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1zt411A7H8',
+    number: 13,
     title: '差不多隆重的首映会 跟紫棋一起复习“差不多姑娘”公演LIVE',
     series: '邓紫棋工作室',
     group: '幕后',
@@ -259,6 +286,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1YK411572Y',
+    number: 20,
     title: '距离上一个VLOG，已经很久以后了',
     series: '邓紫棋工作室',
     group: '日常',
@@ -268,6 +296,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1k5411u7HD',
+    number: 33,
     title: '《超能力》MV之世上只有哥哥好',
     series: '邓紫棋工作室',
     group: '幕后',
@@ -277,6 +306,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1dA411T7bX',
+    number: 30,
     title: '《平行世界》弹唱版',
     series: '邓紫棋工作室',
     group: '幕后',
@@ -286,6 +316,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1sa4y1i7h5',
+    number: 21,
     title: '没想到有一天，我会变成木匠',
     series: '邓紫棋工作室',
     group: '日常',
@@ -295,6 +326,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV184411q79m',
+    number: 14,
     title: '藏满彩蛋的「差不多28」生日会 幕后大揭秘！',
     series: '邓紫棋工作室',
     group: '幕后',
@@ -304,6 +336,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV14z4y197UE',
+    number: 22,
     title: '我的14天隔离生活， 就这样开始！',
     series: '邓紫棋工作室',
     group: '日常',
@@ -313,6 +346,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1H64y1f725',
+    number: 28,
     title: '第一次拍古装 之 木兰篇',
     series: '邓紫棋工作室',
     group: '幕后',
@@ -332,6 +366,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1a3411q7gG',
+    number: 34,
     title: '幸福开箱 之《摩天动物园》限量黑胶',
     series: '邓紫棋工作室',
     group: '开箱',
@@ -341,6 +376,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1xV411h7FP',
+    number: 29,
     title: '第一次拍古装 之 武则天/贞德篇',
     series: '邓紫棋工作室',
     group: '幕后',
@@ -350,6 +386,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1ZJ411v7kU',
+    number: 17,
     title: '在录音室画下一个完美的「句号」',
     series: '邓紫棋工作室',
     group: '幕后',
@@ -359,6 +396,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV17441177TB',
+    number: 8,
     title: '从早吃到晚的LV纽约时装秀之旅',
     series: '邓紫棋工作室',
     group: '日常',
@@ -368,6 +406,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV11B4y1F7xs',
+    number: 32,
     title: '《孤独》MV钢琴是真烧的',
     series: '邓紫棋工作室',
     group: '幕后',
@@ -387,6 +426,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1vy4y1B7oe',
+    number: 26,
     title: '远距离参加金曲奖',
     series: '邓紫棋工作室',
     group: '日常',
@@ -426,12 +466,12 @@ export const vlogs = [
   },
   {
     bvid: 'BV1N441147Eg',
+    number: 6,
     title: '去看林书豪打球',
     series: '邓紫棋工作室',
     group: '日常',
     date: '2019-05-03',
     duration: '8:53',
     cover: '/covers/vlog/vlog-6-jeremy.jpg',
-    number: 6,
   },
 ]
