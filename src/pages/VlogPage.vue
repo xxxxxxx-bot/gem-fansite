@@ -38,8 +38,7 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
         GEM <span class="text-gradient-lilac">VLOG</span>
       </h1>
       <p v-reveal="200" class="mt-6 max-w-2xl text-sm leading-relaxed text-cream/70">
-        邓紫棋官方账号与工作室拍摄的 VLOG——巡演路上、旅行日常、开箱与幕后记录。共
-        {{ vlogs.length }} 支，按发布时间倒序。
+        邓紫棋官方账号与工作室拍摄的 VLOG——巡演路上、旅行日常、开箱与幕后记录。
       </p>
 
       <div v-reveal="280" class="mt-8 flex flex-wrap gap-2">
