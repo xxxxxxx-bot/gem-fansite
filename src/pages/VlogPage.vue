@@ -6,10 +6,11 @@ const active = ref('全部')
 const current = ref(null)
 
 const sorted = computed(() =>
-  [...vlogs].sort((a, b) => (a.number ?? 999) - (b.number ?? 999) || b.date.localeCompare(a.date)),
+  [...vlogs].sort((a, b) => (b.number ?? -1) - (a.number ?? -1) || b.date.localeCompare(a.date)),
 )
+const featured = computed(() => (active.value === '全部' ? sorted.value[0] : null))
 const list = computed(() =>
-  active.value === '全部' ? sorted.value : sorted.value.filter((v) => v.group === active.value),
+  featured.value ? sorted.value.slice(1) : sorted.value.filter((v) => v.group === active.value),
 )
 
 function open(v) {
@@ -58,6 +59,33 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
         </button>
       </div>
     </div>
+  </section>
+
+  <section v-if="featured" class="mx-auto max-w-6xl px-6 pb-12">
+    <button
+      v-reveal
+      class="group relative block min-h-[360px] w-full overflow-hidden rounded-3xl border border-white/10 text-left md:min-h-[440px]"
+      @click="open(featured)"
+    >
+      <img
+        :src="featured.cover"
+        :alt="featured.title"
+        class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/45 to-ink/5"></div>
+      <span
+        class="absolute right-6 top-6 flex h-12 w-12 items-center justify-center rounded-full bg-black/50 text-cream backdrop-blur transition group-hover:bg-gold group-hover:text-ink"
+      >
+        ▶
+      </span>
+      <div class="absolute inset-x-0 bottom-0 p-8 md:p-12">
+        <span class="rounded-full bg-gold px-3 py-1 text-[10px] font-black tracking-[0.2em] text-ink">最新 VLOG</span>
+        <h2 class="mt-4 text-3xl font-black md:text-5xl">{{ featured.title }}</h2>
+        <p class="mt-2 text-sm text-cream/75">
+          #{{ featured.number }} · {{ featured.series }} · {{ featured.date }} · {{ featured.duration }}
+        </p>
+      </div>
+    </button>
   </section>
 
   <section class="mx-auto max-w-6xl px-6 pb-24">
