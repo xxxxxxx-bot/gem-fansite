@@ -61,7 +61,6 @@ const countdown = computed(() => {
       <div v-reveal="360" class="mt-12 flex flex-wrap gap-4">
         <RouterLink to="/music" class="btn btn-gold">探索音乐世界 →</RouterLink>
         <RouterLink to="/fanclub" class="btn btn-ghost">了解棋士联盟</RouterLink>
-        <RouterLink to="/vlog" class="btn btn-ghost">看幕后 VLOG</RouterLink>
       </div>
     </div>
 
