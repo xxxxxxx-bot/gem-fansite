@@ -2,6 +2,7 @@
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 import { mvs, mvSpecial, revelationChapters, spanishChapters } from '../data/mvs.js'
 
+const sortedMvs = [...mvs].sort((a, b) => (b.date || b.year).localeCompare(a.date || a.year))
 const sortedChapters = [...revelationChapters].sort((a, b) => a.chapter.localeCompare(b.chapter))
 const sortedSpanish = [...spanishChapters].sort((a, b) => a.chapter.localeCompare(b.chapter))
 
@@ -38,7 +39,7 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
         影像<span class="text-gradient-lilac">馆</span>
       </h1>
       <p v-reveal="200" class="mt-6 max-w-2xl text-sm leading-relaxed text-cream/70">
-        官方 MV 精选，点开在站内直接播放（Bilibili
+        官方 MV 与现场影像合集，点开在站内直接播放（Bilibili
         官方嵌入播放器）。来源优先官方账号投稿，其余为画质最好的修复版，逐条都有标注；也可一键跳转 B 站观看。
       </p>
 
@@ -49,7 +50,7 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
       >
         <div class="flex items-center gap-3">
           <span class="shrink-0 rounded-full bg-gold/90 px-2.5 py-1 text-[10px] tracking-[0.2em] text-ink">官方投稿</span>
-          <p class="text-xs leading-relaxed text-muted">视频由 GEM鄧紫棋 / 邓紫棋工作室官方账号上传，官方原版画质，不会失效。</p>
+          <p class="text-xs leading-relaxed text-muted">视频由歌手官方账号、工作室、节目/平台官方账号上传，官方原版画质。</p>
         </div>
         <div class="hidden h-8 w-px bg-white/10 sm:block"></div>
         <div class="flex items-center gap-3">
@@ -62,7 +63,7 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
 
   <section class="mx-auto max-w-6xl px-6 pb-24">
     <div class="grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
-      <button v-for="(m, i) in mvs" :key="m.bvid" v-reveal="(i % 3) * 80" class="group text-left" @click="open(m)">
+      <button v-for="(m, i) in sortedMvs" :key="m.bvid" v-reveal="(i % 3) * 80" class="group text-left" @click="open(m)">
         <div
           class="relative aspect-video overflow-hidden rounded-2xl border border-white/10 bg-surface transition duration-500 group-hover:-translate-y-1.5 group-hover:border-gold/40"
         >
@@ -108,8 +109,7 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
       </h2>
       <p v-reveal="160" class="mt-4 max-w-2xl text-sm leading-relaxed text-cream/70">
         2022 年她把整张专辑的 MV 拍成一部 14 章科幻连续剧：Gloria
-        从乐土跌入废土，穿越冰河与深海。官方按章投稿了单独版本（第 10/11/13/14 章 B
-        站暂无单独投稿，可在全旅程版里看到），想从哪一章看就从哪一章看。
+        从乐土跌入废土，穿越冰河与深海。官方按章投稿了全部 14 个单独版本，想从哪一章看就从哪一章看。
       </p>
 
       <div class="mt-10">
@@ -163,7 +163,7 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
         </button>
       </div>
       <p class="mt-6 text-xs leading-relaxed text-muted/70">
-        * 中文版章节按剧情顺序编号；缺少的第十、十一、十三、十四章可在全旅程版中观看对应段落。
+        * 中文版 14 章均有官方单独投稿；全旅程版可一次看完整部连续剧。
       </p>
 
       <!-- 西语版 -->
