@@ -213,6 +213,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1x4411E78V',
+    number: 7,
     title: '邓紫棋母女对决 辣面挑战实力坑妈',
     series: '邓紫棋工作室',
     group: '日常',
@@ -321,6 +322,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1t4411j7mH',
+    number: 5,
     title: '邓紫棋公开美国大house 与朋友合体BBQ欢乐多',
     series: '邓紫棋工作室',
     group: '日常',
@@ -375,6 +377,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1m4411p7wd',
+    number: 1,
     title: '邓紫棋在洛杉矶第一次当厨师？！真稀奇！',
     series: '邓紫棋工作室',
     group: '日常',
@@ -393,6 +396,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1B4411L7AR',
+    number: 2,
     title: '邓紫棋洛杉矶爬山状况百出，惬意一日游竟变冒险之旅！',
     series: '邓紫棋工作室',
     group: '日常',
@@ -402,6 +406,7 @@ export const vlogs = [
   },
   {
     bvid: 'BV1Q4411579D',
+    number: 3,
     title: '邓紫棋参观FOX Studio 全程尖叫“哇”不停',
     series: '邓紫棋工作室',
     group: '日常',
@@ -411,11 +416,22 @@ export const vlogs = [
   },
   {
     bvid: 'BV1d4411j7ro',
+    number: 4,
     title: '邓紫棋洛杉矶骑马踏青 笑称：像西天取经',
     series: '邓紫棋工作室',
     group: '日常',
     date: '2019-05-21',
     duration: '4:52',
     cover: '/covers/vlog/la-horse.jpg',
+  },
+  {
+    bvid: 'BV1N441147Eg',
+    title: '去看林书豪打球',
+    series: '邓紫棋工作室',
+    group: '日常',
+    date: '2019-05-03',
+    duration: '8:53',
+    cover: '/covers/vlog/vlog-6-jeremy.jpg',
+    number: 6,
   },
 ]

@@ -111,6 +111,12 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
             {{ v.group }}
           </span>
           <span
+            v-if="v.number"
+            class="absolute right-3 top-3 rounded-full bg-lilac/90 px-2 py-0.5 text-[10px] font-black tracking-[0.08em] text-ink"
+          >
+            #{{ v.number }}
+          </span>
+          <span
             class="absolute bottom-3 right-3 rounded bg-black/65 px-2 py-0.5 font-mono text-[10px] tabular-nums text-cream/85"
           >
             {{ v.duration }}
