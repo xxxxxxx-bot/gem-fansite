@@ -33,12 +33,12 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
     <div class="orb right-[-6%] bottom-[-30%] h-80 w-80 bg-amber-400/15" style="animation-delay: -5s"></div>
     <div class="noise absolute inset-0"></div>
     <div class="relative mx-auto max-w-6xl px-6">
-      <p v-reveal class="section-label">Behind the Scenes</p>
+      <p v-reveal class="section-label">Video Log</p>
       <h1 v-reveal="100" class="mt-4 text-4xl font-black md:text-6xl">
-        幕后<span class="text-gradient-lilac">VLOG</span>
+        GEM<span class="text-gradient-lilac">VLOG</span>
       </h1>
       <p v-reveal="200" class="mt-6 max-w-2xl text-sm leading-relaxed text-cream/70">
-        邓紫棋官方账号拍摄的 VLOG——巡演路上、后台日常、开箱与盘点。共
+        邓紫棋官方账号与工作室拍摄的 VLOG——巡演路上、旅行日常、开箱与幕后记录。共
         {{ vlogs.length }} 支，按发布时间倒序。
       </p>
 
