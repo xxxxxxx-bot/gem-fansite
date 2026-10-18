@@ -35,7 +35,7 @@ export const mvs = [
   { title: '李香兰', en: '', year: '2023', date: '2023-10-16', bvid: 'BV1vu4y1s7ou', cover: '/covers/mv/li-xiang-lan.jpg', official: true, note: "【时光音乐会】G.E.M.邓紫棋《李香兰》" },
   { title: '唯一', en: '', year: '2023', date: '2023-10-01', bvid: 'BV1ZN4y1f7p6', cover: '/covers/mv/only.jpg', official: true, note: "【时光音乐会】G.E.M.邓紫棋《唯一》" },
   { title: '情人', en: '', year: '2023', date: '2023-09-17', bvid: 'BV18y396wEK2', cover: '/covers/mv/lover.jpg', official: false, note: "【时光音乐会】G.E.M.邓紫棋《情人》" },
-  { title: '面壁者', en: '', year: '2022', date: '2022-12-08', bvid: 'BV1z14y1K74o', cover: '/covers/mv/wallfacer.jpg', official: false, note: "【4K珍藏】《三体》动画片尾主题曲《面壁者》" },
+  { title: '面壁者', en: '', year: '2022', date: '2022-12-08', bvid: 'BV1Hd4y1s7iW', cover: '/covers/mv/wallfacer.jpg', official: true, note: "《三体》动画片尾主题曲《面壁者》正式公开！" },
   { title: '说爱你', en: '', year: '2020', date: '2020-01-03', bvid: 'BV1Kz4y1r7KT', cover: '/covers/mv/say-love-you.jpg', official: true, note: "蔡依林 X 邓紫棋《说爱你》" },
   { title: '很久以后', en: '', year: '2019', date: '2019-12-27', bvid: 'BV1Nk4y1R7AP', cover: '/covers/mv/long-after.jpg', official: true, note: "很久以后 - G.E.M.邓紫棋" },
   { title: '热爱就一起', en: '', year: '2019', date: '2019-04-17', bvid: 'BV1gb41157FF', cover: '/covers/mv/love-together.jpg', official: false, note: "G.E.M.邓紫棋、王嘉尔 -《 热爱就一起》（高清版）" },
