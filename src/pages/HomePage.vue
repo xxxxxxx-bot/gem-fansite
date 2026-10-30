@@ -144,7 +144,7 @@ const countdown = computed(() => {
               <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/10"></div>
               <div class="relative flex h-24 flex-col items-center justify-center px-2 text-center">
                 <span class="text-sm font-black text-cream drop-shadow">YouTube 已上线</span>
-                <span class="mt-0.5 text-[10px] tracking-widest text-cream/70">官方歌词版 · 4K</span>
+                <span class="mt-0.5 text-[10px] tracking-widest text-cream/70">官方 MV · 4K</span>
               </div>
             </a>
           </div>

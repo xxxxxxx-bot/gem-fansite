@@ -245,9 +245,9 @@ export const newRelease = {
   kind: '新专辑先行曲',
   date: '2026-10-06',
   targetISO: '2026-10-06T00:00:00+08:00',
-  cover: '/covers/mv/free-to-be-you.jpg',
-  youtubeUrl: 'https://www.youtube.com/watch?v=0GZ4gQQE1yM',
-  biliUrl: 'https://www.bilibili.com/video/BV1NqHe6aEd9',
+  cover: '/covers/mv/free-to-be-you-mv.jpg',
+  youtubeUrl: 'https://www.youtube.com/watch?v=cWZvojeFbXo',
+  biliUrl: 'https://www.bilibili.com/video/BV11SxY6MEp2',
   fullIntro: `当科技不断替我们预测、量化、修正，
 当愉悦与便利变得唾手可得，
 我们是否还能听见自己的感受、相信自己的判断，并为自己作出选择？

@@ -1,7 +1,8 @@
 // MV 源为 bilibili：official=true 为官方账号投稿（GEM鄧紫棋 / 邓紫棋工作室 / 蔡依林工作室 / 咪咕音乐官方 / 大家的音乐机等官方账号），false 为高画质搬运版
 // 封面已本地化到 public/covers/mv/
 export const mvs = [
-  { title: '自由的你', en: 'FREE TO BE YOU · 啟程版', year: '2026', date: '2026-10-06', bvid: 'BV1NqHe6aEd9', cover: '/covers/mv/free-to-be-you.jpg', official: true, isNew: true, note: "G.E.M. 邓紫棋【自由的你】启程版 Official Lyric Video (4K)" },
+  { title: '自由的你', en: 'FREE TO BE YOU', year: '2026', date: '2026-10-06', bvid: 'BV11SxY6MEp2', cover: '/covers/mv/free-to-be-you-mv.jpg', official: true, isNew: true, note: '新专辑先行曲官方 MV 正式版，魏大勋出演' },
+  { title: '自由的你', en: 'FREE TO BE YOU · 啟程版', year: '2026', date: '2026-10-06', bvid: 'BV1NqHe6aEd9', cover: '/covers/mv/free-to-be-you.jpg', official: true, note: "G.E.M. 邓紫棋【自由的你】启程版 Official Lyric Video (4K)" },
   { title: '光年之外', en: 'LIGHT YEARS AWAY', year: '2016', date: '2016-12-30', bvid: 'BV1ws411Y7wi', cover: '/covers/mv/light-years.jpg', official: false, note: "G.E.M.邓紫棋 - 光年之外MV. 1080P" },
   { title: '倒数', en: 'TIK TOK', year: '2018', date: '2018-08-16', bvid: 'BV1LM411h7sZ', cover: '/covers/mv/tik-tok.jpg', official: false, note: "【4K顶级画质】G.E.M.邓紫棋《倒数》MV修复版" },
   { title: '句号', en: 'FULL STOP', year: '2019', date: '2019-11-22', bvid: 'BV1RJ411R7tF', cover: '/covers/mv/full-stop.jpg', official: true, note: "【官方MV】G.E.M.邓紫棋《句号》" },
