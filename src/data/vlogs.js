@@ -7,7 +7,7 @@ export const vlogs = [
   {
     bvid: 'BV1xPx968EdE',
     number: 52,
-    title: '完美撒花篇（收官）',
+    title: 'I AM GLORIA 世界巡演 之 完美撒花！！！',
     series: 'I AM GLORIA 世界巡演',
     group: '世界巡演',
     date: '2026-11-05',
