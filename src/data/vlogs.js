@@ -5,6 +5,16 @@ export const vlogFilters = ['全部', '世界巡演', '世界巡玩', '开箱', 
 
 export const vlogs = [
   {
+    bvid: 'BV1xPx968EdE',
+    number: 52,
+    title: '完美撒花篇（收官）',
+    series: 'I AM GLORIA 世界巡演',
+    group: '世界巡演',
+    date: '2026-11-05',
+    duration: '18:59',
+    cover: '/covers/vlog/finale.jpg',
+  },
+  {
     bvid: 'BV14joqBxEKa',
     number: 51,
     title: '台北篇',
