@@ -11,6 +11,7 @@ const links = [
   { to: '/tour', label: '巡演' },
   { to: '/fanclub', label: '棋士联盟' },
   { to: '/about', label: '关于' },
+  { to: '/novel', label: '小说' },
 ]
 const year = new Date().getFullYear()
 </script>

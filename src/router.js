@@ -7,6 +7,7 @@ const router = createRouter({
     { path: '/', name: 'home', component: HomePage },
     { path: '/music', name: 'music', component: () => import('./pages/MusicPage.vue') },
     { path: '/mv', name: 'mv', component: () => import('./pages/MvPage.vue') },
+    { path: '/novel', name: 'novel', component: () => import('./pages/NovelPage.vue') },
     { path: '/vlog', name: 'vlog', component: () => import('./pages/VlogPage.vue') },
     { path: '/tour', name: 'tour', component: () => import('./pages/TourPage.vue') },
     { path: '/fanclub', name: 'fanclub', component: () => import('./pages/FanClubPage.vue') },
