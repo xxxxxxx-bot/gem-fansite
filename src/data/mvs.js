@@ -2,6 +2,7 @@
 // 封面已本地化到 public/covers/mv/
 export const mvs = [
   { title: '自由的你', en: 'FREE TO BE YOU', year: '2026', date: '2026-10-06', bvid: 'BV11SxY6MEp2', cover: '/covers/mv/free-to-be-you-mv.jpg', official: true, isNew: true, note: '新专辑先行曲官方 MV 正式版，魏大勋出演' },
+  { title: '自由的你 MV 幕后花絮', en: '自由的问答', year: '2026', date: '2026-11-14', bvid: 'BV1JfsV6qEnN', cover: '/covers/mv/free-to-be-you-bts.jpg', official: true, note: '官方幕后花絮：「自由的问答」， MV 拍摄现场大公开' },
   { title: '自由的你', en: 'FREE TO BE YOU · 啟程版', year: '2026', date: '2026-10-06', bvid: 'BV1NqHe6aEd9', cover: '/covers/mv/free-to-be-you.jpg', official: true, note: "G.E.M. 邓紫棋【自由的你】启程版 Official Lyric Video (4K)" },
   { title: '光年之外', en: 'LIGHT YEARS AWAY', year: '2016', date: '2016-12-30', bvid: 'BV1ws411Y7wi', cover: '/covers/mv/light-years.jpg', official: false, note: "G.E.M.邓紫棋 - 光年之外MV. 1080P" },
   { title: '倒数', en: 'TIK TOK', year: '2018', date: '2018-08-16', bvid: 'BV1LM411h7sZ', cover: '/covers/mv/tik-tok.jpg', official: false, note: "【4K顶级画质】G.E.M.邓紫棋《倒数》MV修复版" },
